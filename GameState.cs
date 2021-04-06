@@ -63,6 +63,7 @@ namespace O_Neillo
                 if (i == index - 8 && Board[i] == 0) break;
                 if (Board[i] == Turn) end = i;
             }
+            if (end == index - 8) return false;
 
             return end != 999;
         }
@@ -77,6 +78,7 @@ namespace O_Neillo
                 if (i == index - 9 && Board[i] == 0) break;
                 if (Board[i] == Turn) end = i;
             }
+            if (end == index - 9) return false;
 
             return end != 999;
         }
@@ -91,6 +93,7 @@ namespace O_Neillo
                 if (i == index - 7 && Board[i] == 0) break;
                 if (Board[i] == Turn) end = i;
             }
+            if (end == index - 7) return false;
 
             return end != 999;
         }
@@ -105,6 +108,7 @@ namespace O_Neillo
                 if (i == index + 8 && Board[i] == 0) break;
                 if (Board[i] == Turn) end = i;
             }
+            if (end == index + 8) return false;
 
             return end != 999;
         }
@@ -119,6 +123,7 @@ namespace O_Neillo
                 if (i == index + 7 && Board[i] == 0) break;
                 if (Board[i] == Turn) end = i;
             }
+            if (end == index + 7) return false;
 
             return end != 999;
         }
@@ -133,6 +138,7 @@ namespace O_Neillo
                 if (i == index + 9 && Board[i] == 0) break;
                 if (Board[i] == Turn) end = i;
             }
+            if (end == index + 9) return false;
 
             return end != 999;
         }
@@ -147,6 +153,7 @@ namespace O_Neillo
                 if (i == index - 1 && Board[i] == 0) break;
                 if (Board[i] == Turn) end = i;
             }
+            if (end == index - 1) return false;
 
             return end != 999;
         }
@@ -161,6 +168,7 @@ namespace O_Neillo
                 if (i == index - 1 && Board[i] == 0) break;
                 if (Board[i] == Turn) end = i;
             }
+            if (end == index + 1) return false;
 
             return end != 999;
         }
@@ -175,6 +183,7 @@ namespace O_Neillo
                 if (i == index - 8 && Board[i] == 0) break;
                 if (Board[i] == Turn) end = i;
             }
+            if (end == index - 8) return;
 
             if (end != 999)
             {
@@ -195,6 +204,7 @@ namespace O_Neillo
                 if (i == index - 9 && Board[i] == 0) break;
                 if (Board[i] == Turn) end = i;
             }
+            if (end == index - 9) return;
 
             if (end != 999)
             {
@@ -215,6 +225,7 @@ namespace O_Neillo
                 if (i == index - 7 && Board[i] == 0) break;
                 if (Board[i] == Turn) end = i;
             }
+            if (end == index - 7) return;
 
             if (end != 999)
             {
@@ -235,6 +246,7 @@ namespace O_Neillo
                 if (i == index + 8 && Board[i] == 0) break;
                 if (Board[i] == Turn) end = i;
             }
+            if (end == index + 8) return;
 
             if (end != 999)
             {
@@ -255,6 +267,7 @@ namespace O_Neillo
                 if (i == index + 7 && Board[i] == 0) break;
                 if (Board[i] == Turn) end = i;
             }
+            if (end == index + 7) return;
 
             if (end != 999)
             {
@@ -275,6 +288,7 @@ namespace O_Neillo
                 if (i == index + 9 && Board[i] == 0) break;
                 if (Board[i] == Turn) end = i;
             }
+            if (end == index + 9) return;
 
             if (end != 999)
             {
@@ -295,6 +309,7 @@ namespace O_Neillo
                 if (i == index - 1 && Board[i] == 0) break;
                 if (Board[i] == Turn) end = i;
             }
+            if (end == index - 1) return;
 
             if (end != 999)
             {
@@ -315,6 +330,7 @@ namespace O_Neillo
                 if (i == index + 1 && Board[i] == 0) break;
                 if (Board[i] == Turn) end = i;
             }
+            if (end == index + 1) return;
 
             if (end != 999)
             {
@@ -339,6 +355,9 @@ namespace O_Neillo
 
             // Turn the current piece
             Board[index] = Turn;
+
+            // Once that's happened, ensure there are
+            // any possible moves left
 
             // Next turn
             Turn = (Turn == 1 ? 2 : 1);
