@@ -199,7 +199,7 @@ namespace O_Neillo
             this.player2Tokens.Name = "player2Tokens";
             this.player2Tokens.Size = new System.Drawing.Size(50, 40);
             this.player2Tokens.TabIndex = 1;
-            this.player2Tokens.Text = "2x";
+            this.player2Tokens.Text = "0x";
             // 
             // player1Tokens
             // 
@@ -209,7 +209,7 @@ namespace O_Neillo
             this.player1Tokens.Name = "player1Tokens";
             this.player1Tokens.Size = new System.Drawing.Size(50, 40);
             this.player1Tokens.TabIndex = 0;
-            this.player1Tokens.Text = "2x";
+            this.player1Tokens.Text = "0x";
             // 
             // gamePanel
             // 
@@ -1359,28 +1359,28 @@ namespace O_Neillo
             // startToolStripMenuItem
             // 
             this.startToolStripMenuItem.Name = "startToolStripMenuItem";
-            this.startToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.startToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.startToolStripMenuItem.Text = "Start";
             this.startToolStripMenuItem.Click += new System.EventHandler(this.StartClick);
             // 
             // saveGameToolStripMenuItem
             // 
             this.saveGameToolStripMenuItem.Name = "saveGameToolStripMenuItem";
-            this.saveGameToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveGameToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.saveGameToolStripMenuItem.Text = "Save Game...";
             this.saveGameToolStripMenuItem.Click += new System.EventHandler(this.SaveGameClick);
             // 
             // loadGameToolStripMenuItem
             // 
             this.loadGameToolStripMenuItem.Name = "loadGameToolStripMenuItem";
-            this.loadGameToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.loadGameToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.loadGameToolStripMenuItem.Text = "Load Game...";
             this.loadGameToolStripMenuItem.Click += new System.EventHandler(this.LoadGameClick);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitClick);
             // 
@@ -1395,7 +1395,7 @@ namespace O_Neillo
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.AboutClick);
             // 

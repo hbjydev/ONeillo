@@ -141,6 +141,13 @@ namespace O_Neillo
             player1Name.Enabled = false;
             player2Name.Text = names[1];
             player2Name.Enabled = false;
+
+            // Set the counters
+            int p1 = (from counter in gameState.Board where counter == 1 select counter).Count();
+            int p2 = (from counter in gameState.Board where counter == 2 select counter).Count();
+
+            player1Tokens.Text = $"{p1}x";
+            player2Tokens.Text = $"{p2}x";
         }
 
         private void ExitClick(object sender, EventArgs e)
